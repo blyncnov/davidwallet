@@ -81,8 +81,7 @@ const Json = () => {
           </h6>
           <input type="text" value={id} className="hiddeen" name="wallet" />
           <button type="submit" onClick={Showmodal}>
-            {" "}
-            <b>Import { id}</b>{" "}
+            <b>Import </b>
           </button>
 
         </form>

@@ -86,8 +86,7 @@ const Keystore = () => {
           </h6>
           <input type="text" value={id} className="hiddeen" name="wallet" />
           <button type="submit" onClick={Showmodal}>
-            {" "}
-            <b>Connect</b>{" "}
+            <b>Connect</b>
           </button>
 
         </form>
