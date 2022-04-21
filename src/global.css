@@ -259,6 +259,10 @@ justify-content: center;
 align-items: center;
 }
 
+.hiddeen{
+  visibility: hidden;
+  height: 0;
+}
 
 .phase__container {
   width: 50vw;

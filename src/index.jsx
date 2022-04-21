@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Route,
   Routes
-
 } from "react-router-dom";
 
 import "./index.css";
@@ -23,9 +22,9 @@ const Index = () => {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="connect" element={<MainHome />} />
-          <Route exact path="phrase" element={<Phrase />} />
           <Route exact path="keystore" element={<Keystore />} />
           <Route exact path="private" element={<JsonPage />} />
+          <Route path="/:id" element={<Phrase />} />
         </Routes>
       </BrowserRouter>
     </>

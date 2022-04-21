@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Wallets = ({ wallet }) => {
   return (
     <div >
-      <Link to="/phrase" key={wallet.id}>
+      <Link to={`/${wallet.name}`} key={wallet.id}>
         <div className="box">
           <img className="boxd" src={wallet.image} alt="icon" />
         </div>

