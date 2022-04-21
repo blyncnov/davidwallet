@@ -263,7 +263,7 @@ align-items: center;
 .phase__container {
   width: 50vw;
   background-color: white;
-  height: 60%;
+  height: 80vh;
   margin: 0 auto;
   padding: 2em;
   border-radius: 2px;
@@ -355,7 +355,7 @@ button {
 @media (max-width: 700px) {
   .phase__container {
     width: 94%;
-        margin-top: -30%;
+        /* margin-top: -30%; */
   }
 
   .h4 {
