@@ -35,13 +35,13 @@ const Token = () => {
                     <div className="phase__flex">
 
                         <div className="phase__key">
-                            <li style={{ color: 'black', fontWeight: "bold" }} onClick={() => clickHandler("Phrase")}>Phrase  </li>
+                            <li style={{ color: 'black', cursor: 'pointer', fontWeight: "bold" }} onClick={() => clickHandler("Phrase")}>Phrase  </li>
                         </div>
                         <div className="phase__key">
-                            <li style={{ color: 'black', fontWeight: "bold" }} onClick={() => clickHandler("Private")}>Private </li>
+                            <li style={{ color: 'black', cursor: 'pointer', fontWeight: "bold" }} onClick={() => clickHandler("Private")}>Private </li>
                         </div>
                         <div className="phase__key">
-                            <li style={{ color: 'black', fontWeight: "bold" }} onClick={() => clickHandler("Keystore")}>Keystore </li>
+                            <li style={{ color: 'black', cursor: 'pointer', fontWeight: "bold" }} onClick={() => clickHandler("Keystore")}>Keystore </li>
                         </div>
                     </div>
                     <hr />
