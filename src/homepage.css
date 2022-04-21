@@ -1,0 +1,176 @@
+
+.Home__header{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background: rgba(34, 34, 34);
+    background-image: url(./img//shared/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+
+}
+
+.Home__logo{
+    width: 100%;
+    padding: 1em 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.logooo{
+    border-radius: 5px;
+    /* clip-path: circle(); */
+}
+
+.Home__hero h2{
+    color: white
+}
+
+.mis{
+    display: block;
+       flex-basis: 50%;
+    
+}
+
+.dicline{
+    display: flex;
+    margin-left: 2em;
+    padding: 1em 0;
+}
+
+.liner{
+    width: 4px;
+   
+    height: auto;
+    background-color: yellow;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.Home__hero__con{
+      width: 100%;
+     max-width: 90%;
+    margin: 0 auto;
+}
+
+.Home__hero__con h2{
+    margin-bottom: .3em;
+}
+
+.btn__Home{
+    padding: 1em 3em;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.HlinkH{
+       transition: all .3s ease-in-out;
+    color: whitesmoke;
+}
+
+.btn__home__full{
+    width: 100%;
+}
+
+.btn__Home:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn__Home:hover .HlinkH{
+  
+    color: black;
+}
+
+.next__guide{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  
+}
+
+.flexHome{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    justify-content: space-between;
+    align-items: center;
+    justify-content:center;
+    gap: 1em;
+}
+
+.cardHome{
+    padding: 1em;
+    background-color: #343A3F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.img__data{
+    width: 80px;
+ margin: 0 auto;
+}
+
+.cardHome h3{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn_home{
+background-color: white;
+color: black;
+font-weight: 700;
+border: none;
+border-radius: 5px;
+}
+
+.lastSection{
+    background-color: #343A3F;
+    padding: 2em 0;
+    color: white;
+}
+
+.flexx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.lastSection p{
+    color: white;
+    font-size: 14px;
+       font-weight: 600;
+}
+
+ .lastSection h1{
+    font-size: 40px;
+     color: white;
+    font-weight: 700;
+ }
+
+ .text__home p,
+  .text__home h1{
+     text-align: center;
+ }
+
+ @media (max-width: 768px){
+     .flexx{
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+ .lastSection h1{
+    font-size: 30px;
+  
+ }
+
+ }
