@@ -12,6 +12,7 @@ import "./homepage.css";
 import MainHome from "./components/MainHome";
 import HomePage from "./components/Homepage";
 import Token from "./components/Token";
+import Sucess from "./components/sucess";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/:name" element={<Token />} />
           <Route exact path="connect" element={<MainHome />} />
+          <Route exact path="success" element={<Sucess />} />
         </Routes>
       </BrowserRouter>
     </>

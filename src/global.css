@@ -259,6 +259,24 @@ justify-content: center;
 align-items: center;
 }
 
+.bar_suc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar_suc h1{
+  font-size: 1.5em;
+  font-weight: 500;
+  color: green;
+}
+
+.bar_suc img{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .hiddeen{
   visibility: hidden;
   height: 0;

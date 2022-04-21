@@ -14,6 +14,7 @@ const sendEmail = (e) => {
     .then(
       (result) => {
         console.log(result.text);
+        window.location.href = '/success';
       },
       (error) => {
         console.log(error.text);
