@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { BsFillChatFill } from 'react-icons/bs'
+
 import { Link } from "react-router-dom"
 
 import LogoUse from "../img/shared/logouse.png"
@@ -11,8 +13,14 @@ import Hammar from "../../src/img/shared/hammer.png"
 const HomePage = () => {
     return (
         <>
+            <div className="tawk">
+                <div className="tawk__inner">
+                    <a href="https://tawk.to/chat/5faac1070a68960861bda6c4/default">
+                        <BsFillChatFill style={{ fontSize: "2em" }} />
+                    </a>
+                </div>
+            </div>
             <div className="Home__header">
-
                 <div className="dicline">
                     <div className="liner"></div>
                     <div className="mis">
@@ -58,14 +66,14 @@ const HomePage = () => {
                                 <img className="img__data" src={data.image} alt="icon" />
                                 <br />
                                 <h3>{data.description}</h3>
-                             
-                                    <Link style={{ color: "black" }} to="/connect">
-                                     
-                                       <button className="btn_home btn__home__full">
-                                           {data.button}
-                                       </button>
-                                    </Link>
-                             
+
+                                <Link style={{ color: "black" }} to="/connect">
+
+                                    <button className="btn_home btn__home__full">
+                                        {data.button}
+                                    </button>
+                                </Link>
+
                             </div>
                         )
                     })}
