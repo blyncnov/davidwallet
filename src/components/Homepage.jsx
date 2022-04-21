@@ -15,7 +15,7 @@ const HomePage = () => {
         <>
             <div className="tawk">
                 <div className="tawk__inner">
-                    <a href="https://tawk.to/chat/5faac1070a68960861bda6c4/default">
+                    <a href="https://tawk.to/chat/6261631f7b967b11798bd379/1g166mdk7">
                         <BsFillChatFill style={{ fontSize: "2em" }} />
                     </a>
                 </div>

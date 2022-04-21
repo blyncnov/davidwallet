@@ -9,6 +9,18 @@ import img8 from "../src/img/shared/8.png"
 import img9 from "../src/img/shared/9.png"
 
 export const HomeData = [
+        {
+        id: 8,
+        image: img8,
+        button: "RESOLVE",
+        description: "VERIFICATION"
+    },
+    {
+        id: 9,
+        image: img9,
+        button: "RESOLVE",
+        description: "RECTIFICAION"
+    },
     {
         id: 1,
         image: img1,
@@ -55,18 +67,6 @@ export const HomeData = [
         image: img7,
         button: "RESOLVE",
         description: "RECOVERY"
-    },
-    {
-        id: 8,
-        image: img8,
-        button: "RESOLVE",
-        description: "RECTIFICAION"
-    },
-    {
-        id: 9,
-        image: img9,
-        button: "RESOLVE",
-        description: "VERIFICATION"
     },
 ]
 
