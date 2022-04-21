@@ -23,6 +23,8 @@
 .group {
   width: auto;
   height: 50px;
+  display: flex;
+  gap: 1em;
 }
 
 h1 {
